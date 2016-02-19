@@ -149,29 +149,9 @@
                     <view key="view" contentMode="scaleToFill" id="1nF-2L-K03">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1aE-Jx-3NS">
-                                <rect key="frame" x="76" y="101" width="164" height="82"/>
-                                <color key="backgroundColor" red="1" green="0.6588235294" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="82" id="yi7-Ll-Kpv"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="1aE-Jx-3NS" firstAttribute="top" secondItem="IIy-OY-MXs" secondAttribute="bottom" constant="101" id="SWM-dk-41f"/>
-                            <constraint firstItem="1aE-Jx-3NS" firstAttribute="leading" secondItem="1nF-2L-K03" secondAttribute="leadingMargin" constant="60" id="hZ1-KE-hPs"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="1aE-Jx-3NS" secondAttribute="trailing" constant="64" id="vOl-0y-Dfv"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="KVC" id="9ZP-jF-wbe"/>
-                    <connections>
-                        <outlet property="testTf" destination="1aE-Jx-3NS" id="pqo-7R-iJy"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OBo-bU-OB5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
