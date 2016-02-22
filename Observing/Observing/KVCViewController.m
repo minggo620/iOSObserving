@@ -7,38 +7,52 @@
 //
 
 #import "KVCViewController.h"
+#import "LaughingSir.h"
 
 @interface KVCViewController ()
-@property (weak, nonatomic) IBOutlet UILabel *testTf;
+@property (weak, nonatomic) IBOutlet UITextField *answerTf;
+
+- (IBAction)answer:(id)sender;
 
 @end
 
-@implementation KVCViewController
+@implementation KVCViewController{
+    LaughingSir *laughingSir;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.testTf sizeToFit];
-    // Do any additional setup after loading the view.
+    laughingSir = [LaughingSir new];
+    laughingSir.name = @"梁笑棠";
+    laughingSir.famous = @"一日警察，一世警察";
 }
 
--(void)viewDidLayoutSubviews{
-    [super viewDidLayoutSubviews];
-    [self.testTf sizeToFit];
+NSString* exchangeName(LaughingSir *laughingSir){
+    
+    NSString *preName = [laughingSir valueForKey:@"name"];
+    NSLog(@"laughing的旧名字：%@",preName);
+    
+    [laughingSir setValue:@"laughing 哥" forKey:@"name"];
+    
+    NSString *newName = [laughingSir valueForKey:@"name"];
+    NSLog(@"laughing的新名字：%@",newName);
+    
+    return newName;
 }
+
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)answer:(id)sender {
+    
+    NSString *newName = exchangeName(laughingSir);
+    self.answerTf.text  = newName;
+    
 }
-*/
-
 @end

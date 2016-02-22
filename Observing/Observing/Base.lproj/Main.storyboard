@@ -78,11 +78,11 @@
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KVC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EqC-hA-mdQ">
-                                                    <rect key="frame" x="26" y="11" width="42" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KVC(Laughing Sir 学堂训话)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EqC-hA-mdQ">
+                                                    <rect key="frame" x="8" y="11" width="279" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="Xyi-HP-sv6"/>
-                                                        <constraint firstAttribute="width" constant="42" id="ycC-pI-buE"/>
+                                                        <constraint firstAttribute="width" constant="279" id="ycC-pI-buE"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -90,10 +90,13 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="EqC-hA-mdQ" firstAttribute="leading" secondItem="o9M-MU-eQP" secondAttribute="leadingMargin" constant="18" id="Gm3-E9-Bzl"/>
-                                                <constraint firstItem="EqC-hA-mdQ" firstAttribute="centerY" secondItem="o9M-MU-eQP" secondAttribute="centerY" id="wxi-wh-546"/>
+                                                <constraint firstItem="EqC-hA-mdQ" firstAttribute="centerY" secondItem="o9M-MU-eQP" secondAttribute="centerY" id="8uK-SC-NA1"/>
+                                                <constraint firstItem="EqC-hA-mdQ" firstAttribute="leading" secondItem="o9M-MU-eQP" secondAttribute="leadingMargin" id="Gm3-E9-Bzl"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="EqC-hA-mdQ" secondAttribute="trailing" constant="33" id="xZw-AF-X4b"/>
+                                        </constraints>
                                         <connections>
                                             <segue destination="kyv-pc-2d2" kind="push" id="KMo-ct-zKB"/>
                                         </connections>
@@ -105,11 +108,11 @@
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KVO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oyZ-UB-I39">
-                                                    <rect key="frame" x="27" y="11" width="42" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KVO(Laughing 哥 卧底潜伏)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oyZ-UB-I39">
+                                                    <rect key="frame" x="8" y="11" width="211" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="84T-z6-QB7"/>
-                                                        <constraint firstAttribute="width" constant="42" id="ekN-G3-XJ2"/>
+                                                        <constraint firstAttribute="width" constant="211" id="ekN-G3-XJ2"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -117,7 +120,7 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="oyZ-UB-I39" firstAttribute="leading" secondItem="Tyb-Xs-pwk" secondAttribute="leadingMargin" constant="19" id="LPD-66-SB2"/>
+                                                <constraint firstItem="oyZ-UB-I39" firstAttribute="leading" secondItem="Tyb-Xs-pwk" secondAttribute="leadingMargin" id="LPD-66-SB2"/>
                                                 <constraint firstItem="oyZ-UB-I39" firstAttribute="centerY" secondItem="Tyb-Xs-pwk" secondAttribute="centerY" id="VJG-Ce-R0p"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -149,9 +152,113 @@
                     <view key="view" contentMode="scaleToFill" id="1nF-2L-K03">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="警官：梁笑棠，从今天开始 ，你的生命属于社会的，清楚吗？" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PCs-Qv-ZNj">
+                                <rect key="frame" x="16" y="20" width="292" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="2m5-cS-qvU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Laughing Sir：清楚。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o9n-8g-NQr">
+                                <rect key="frame" x="16" y="82" width="288" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="yZe-az-sr4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="警官：出了这个学堂，你要叫Laughing 哥，记好了吗？" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oCl-sK-IrO">
+                                <rect key="frame" x="16" y="119" width="288" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="W5m-3e-OCt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Laughing Sir：Yes sir。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vab-Po-Qup">
+                                <rect key="frame" x="16" y="189" width="288" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="sh7-8j-gxl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="警官：你妹，大声点。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v4f-5y-COd">
+                                <rect key="frame" x="16" y="232" width="288" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="EqV-Od-GFa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Tb-8q-Hvq">
+                                <rect key="frame" x="110" y="278" width="117" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="117" id="7qO-a1-GU7"/>
+                                    <constraint firstAttribute="height" constant="30" id="Djh-C3-pP9"/>
+                                </constraints>
+                                <state key="normal" title="Answer Loudly"/>
+                                <connections>
+                                    <action selector="answer:" destination="kyv-pc-2d2" eventType="touchUpInside" id="5Cy-bq-yIr"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YKV-BT-hGc">
+                                <rect key="frame" x="110" y="329" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="4fp-3K-8p7"/>
+                                    <constraint firstAttribute="height" constant="30" id="E5G-oG-KAU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Laughing Sir：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="atT-sp-bFA">
+                                <rect key="frame" x="20" y="326" width="97" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="4z4-2u-hCI"/>
+                                    <constraint firstAttribute="width" constant="97" id="PG8-JV-nI4"/>
+                                    <constraint firstAttribute="height" constant="35" id="Xfa-0Q-fRp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="o9n-8g-NQr" firstAttribute="trailing" secondItem="1nF-2L-K03" secondAttribute="trailingMargin" id="0CF-Im-pZU"/>
+                            <constraint firstItem="o9n-8g-NQr" firstAttribute="leading" secondItem="1nF-2L-K03" secondAttribute="leadingMargin" id="336-b1-pA0"/>
+                            <constraint firstItem="oCl-sK-IrO" firstAttribute="top" secondItem="o9n-8g-NQr" secondAttribute="bottom" constant="2" id="5zq-p2-8Ed"/>
+                            <constraint firstItem="o9n-8g-NQr" firstAttribute="top" secondItem="PCs-Qv-ZNj" secondAttribute="bottom" id="BWs-bV-iBh"/>
+                            <constraint firstItem="YKV-BT-hGc" firstAttribute="leading" secondItem="1nF-2L-K03" secondAttribute="leadingMargin" constant="94" id="DgQ-NK-cO1"/>
+                            <constraint firstItem="Vab-Po-Qup" firstAttribute="leading" secondItem="1nF-2L-K03" secondAttribute="leading" constant="16" id="L94-wT-HdF"/>
+                            <constraint firstAttribute="trailing" secondItem="v4f-5y-COd" secondAttribute="trailing" constant="16" id="R54-Wg-jBp"/>
+                            <constraint firstItem="3Tb-8q-Hvq" firstAttribute="centerX" secondItem="1nF-2L-K03" secondAttribute="centerX" constant="8.5" id="T8K-kb-KHe"/>
+                            <constraint firstItem="Vab-Po-Qup" firstAttribute="top" secondItem="oCl-sK-IrO" secondAttribute="bottom" constant="8" id="V8f-fP-G8U"/>
+                            <constraint firstItem="oCl-sK-IrO" firstAttribute="leading" secondItem="1nF-2L-K03" secondAttribute="leading" constant="16" id="W48-K4-Wk9"/>
+                            <constraint firstItem="PCs-Qv-ZNj" firstAttribute="leading" secondItem="1nF-2L-K03" secondAttribute="leading" constant="16" id="YWE-1j-67O"/>
+                            <constraint firstItem="atT-sp-bFA" firstAttribute="leading" secondItem="1nF-2L-K03" secondAttribute="leading" constant="20" id="bAy-3D-Je9"/>
+                            <constraint firstAttribute="trailing" secondItem="oCl-sK-IrO" secondAttribute="trailing" constant="16" id="fB1-LZ-EW7"/>
+                            <constraint firstAttribute="trailing" secondItem="Vab-Po-Qup" secondAttribute="trailing" constant="16" id="iRt-U6-M57"/>
+                            <constraint firstItem="v4f-5y-COd" firstAttribute="top" secondItem="Vab-Po-Qup" secondAttribute="bottom" constant="8" id="jde-t3-gO8"/>
+                            <constraint firstItem="3Tb-8q-Hvq" firstAttribute="top" secondItem="v4f-5y-COd" secondAttribute="bottom" constant="11" id="kPI-Iv-had"/>
+                            <constraint firstItem="YKV-BT-hGc" firstAttribute="top" secondItem="3Tb-8q-Hvq" secondAttribute="bottom" constant="21" id="mCI-T8-MCp"/>
+                            <constraint firstItem="atT-sp-bFA" firstAttribute="top" secondItem="3Tb-8q-Hvq" secondAttribute="bottom" constant="18" id="nzp-0w-zkt"/>
+                            <constraint firstAttribute="trailing" secondItem="PCs-Qv-ZNj" secondAttribute="trailing" constant="12" id="uN7-7Y-X2q"/>
+                            <constraint firstItem="PCs-Qv-ZNj" firstAttribute="top" secondItem="IIy-OY-MXs" secondAttribute="bottom" constant="20" id="yOY-Tg-9Tn"/>
+                            <constraint firstItem="v4f-5y-COd" firstAttribute="leading" secondItem="1nF-2L-K03" secondAttribute="leading" constant="16" id="z5c-S0-Aab"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="KVC" id="9ZP-jF-wbe"/>
+                    <connections>
+                        <outlet property="answerTf" destination="YKV-BT-hGc" id="men-fB-0Vv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OBo-bU-OB5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
