@@ -52,7 +52,8 @@ NSString* exchangeName(LaughingSir *laughingSir){
 - (IBAction)answer:(id)sender {
     
     NSString *newName = exchangeName(laughingSir);
-    self.answerTf.text  = newName;
+    NSString *famous = [laughingSir valueForKey:@"famous"];
+    self.answerTf.text  = [NSString stringWithFormat:@"%@,%@",newName,famous];
     
 }
 @end
