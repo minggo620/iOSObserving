@@ -7,31 +7,43 @@
 //
 
 #import "KVOViewController.h"
+#import "LaughingSir.h"
+#import "YiTian.h"
 
-@interface KVOViewController ()
+@interface KVOViewController ()<LaughingReportDelegate>
+- (IBAction)watchOver:(id)sender;
+@property (weak, nonatomic) IBOutlet UITextField *narcoticsTf;
 
 @end
 
-@implementation KVOViewController
+@implementation KVOViewController{
+    YiTian *yiTian;
+    LaughingSir *laughingSir;
+    
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    yiTian = [YiTian new];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
+}
+- (IBAction)watchOver:(id)sender {
+    if (laughingSir==nil) {
+        laughingSir = [[LaughingSir alloc] initWithYiTian:yiTian];
+        laughingSir.delegate = self;
+
+    }
+    //[laughingSir watchOverYiTian:yiTian];
+    
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark - LaughingReportDelegate
+-(void)reportYitian:(NSUInteger)narcotics{
+    self.narcoticsTf.text = [NSString stringWithFormat:@"%iKg",narcotics];
 }
-*/
 
 @end

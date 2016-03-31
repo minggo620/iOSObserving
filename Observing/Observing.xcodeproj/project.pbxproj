@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4648DB281CAD1EFE00D8DCD5 /* YiTian.m in Sources */ = {isa = PBXBuildFile; fileRef = 4648DB271CAD1EFE00D8DCD5 /* YiTian.m */; };
 		46F3D36F1C7AFB82007C612F /* LaughingSir.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F3D36E1C7AFB82007C612F /* LaughingSir.m */; };
 		46F6AE521C5F557A0074ECE7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F6AE511C5F557A0074ECE7 /* main.m */; };
 		46F6AE551C5F557A0074ECE7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F6AE541C5F557A0074ECE7 /* AppDelegate.m */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4648DB261CAD1EFE00D8DCD5 /* YiTian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YiTian.h; sourceTree = "<group>"; };
+		4648DB271CAD1EFE00D8DCD5 /* YiTian.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YiTian.m; sourceTree = "<group>"; };
 		46F3D36D1C7AFB82007C612F /* LaughingSir.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaughingSir.h; sourceTree = "<group>"; };
 		46F3D36E1C7AFB82007C612F /* LaughingSir.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaughingSir.m; sourceTree = "<group>"; };
 		46F6AE4D1C5F557A0074ECE7 /* Observing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Observing.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +128,8 @@
 				46F6AE871C5F5E960074ECE7 /* KVOViewController.m */,
 				46F3D36D1C7AFB82007C612F /* LaughingSir.h */,
 				46F3D36E1C7AFB82007C612F /* LaughingSir.m */,
+				4648DB261CAD1EFE00D8DCD5 /* YiTian.h */,
+				4648DB271CAD1EFE00D8DCD5 /* YiTian.m */,
 			);
 			path = Observing;
 			sourceTree = "<group>";
@@ -291,6 +296,7 @@
 				46F6AE521C5F557A0074ECE7 /* main.m in Sources */,
 				46F6AE881C5F5E960074ECE7 /* KVOViewController.m in Sources */,
 				46F3D36F1C7AFB82007C612F /* LaughingSir.m in Sources */,
+				4648DB281CAD1EFE00D8DCD5 /* YiTian.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -52,9 +52,65 @@
                     <view key="view" contentMode="scaleToFill" id="UHa-28-Ube">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="亦天可能进行制毒。。。" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6h0-x7-tQ1">
+                                <rect key="frame" x="16" y="58" width="288" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="fbk-9S-6c2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b8v-oF-Qcp">
+                                <rect key="frame" x="16" y="109" width="288" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="FOV-E7-odv"/>
+                                </constraints>
+                                <state key="normal" title="Laughing Sir开始监控亦天"/>
+                                <connections>
+                                    <action selector="watchOver:" destination="nqP-37-Hyh" eventType="touchUpInside" id="Dnn-4a-fF1"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="报告上级亦天制毒数：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v9V-2L-iit">
+                                <rect key="frame" x="16" y="177" width="170" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="WgK-ke-MWq"/>
+                                    <constraint firstAttribute="width" constant="170" id="rvT-0M-jqE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.7725490196" green="0.47450980390000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MUg-p1-8DW">
+                                <rect key="frame" x="186" y="173" width="54" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="G9I-xN-xmd"/>
+                                    <constraint firstAttribute="width" constant="54" id="xP4-70-zhv"/>
+                                </constraints>
+                                <color key="textColor" red="0.84313725490000002" green="0.33333333329999998" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="b8v-oF-Qcp" firstAttribute="leading" secondItem="UHa-28-Ube" secondAttribute="leadingMargin" id="1uU-Ie-5ut"/>
+                            <constraint firstItem="v9V-2L-iit" firstAttribute="top" secondItem="b8v-oF-Qcp" secondAttribute="bottom" constant="38" id="34D-fq-8E4"/>
+                            <constraint firstItem="b8v-oF-Qcp" firstAttribute="trailing" secondItem="UHa-28-Ube" secondAttribute="trailingMargin" id="7y9-OH-umt"/>
+                            <constraint firstItem="6h0-x7-tQ1" firstAttribute="trailing" secondItem="UHa-28-Ube" secondAttribute="trailingMargin" id="KK9-l2-qIs"/>
+                            <constraint firstItem="v9V-2L-iit" firstAttribute="leading" secondItem="UHa-28-Ube" secondAttribute="leading" constant="16" id="MSR-pn-DaY"/>
+                            <constraint firstItem="MUg-p1-8DW" firstAttribute="top" secondItem="b8v-oF-Qcp" secondAttribute="bottom" constant="34" id="Pp0-fs-uIM"/>
+                            <constraint firstItem="MUg-p1-8DW" firstAttribute="leading" secondItem="v9V-2L-iit" secondAttribute="trailing" id="UfG-v4-ieb"/>
+                            <constraint firstItem="6h0-x7-tQ1" firstAttribute="leading" secondItem="UHa-28-Ube" secondAttribute="leadingMargin" id="ccW-iY-xcw"/>
+                            <constraint firstItem="b8v-oF-Qcp" firstAttribute="top" secondItem="6h0-x7-tQ1" secondAttribute="bottom" constant="30" id="j4f-3W-MAj"/>
+                            <constraint firstItem="6h0-x7-tQ1" firstAttribute="top" secondItem="h1N-cK-9VO" secondAttribute="bottom" constant="58" id="tdz-1l-B71"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="KVO" id="md1-xC-VEF"/>
+                    <connections>
+                        <outlet property="narcoticsTf" destination="MUg-p1-8DW" id="4dy-Zj-M27"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vTf-fk-Rci" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -68,6 +124,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="Egl-5h-7ft">
+                            <rect key="frame" x="0.0" y="88" width="320" height="1"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.93333333330000001" green="0.93725490199999995" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
                         <sections>
                             <tableViewSection id="XTy-YR-uOs">
                                 <cells>
@@ -217,7 +278,7 @@
                                     <constraint firstAttribute="height" constant="35" id="Xfa-0Q-fRp"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.7725490196" green="0.47450980390000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YKV-BT-hGc">
@@ -226,6 +287,7 @@
                                     <constraint firstAttribute="width" constant="292" id="4fp-3K-8p7"/>
                                     <constraint firstAttribute="height" constant="30" id="E5G-oG-KAU"/>
                                 </constraints>
+                                <color key="textColor" red="0.7725490196" green="0.47450980390000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
